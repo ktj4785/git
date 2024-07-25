@@ -1,26 +1,25 @@
 package model.dto;
 
 public class ReserveDTO {
+	
 	private int reserveId;
 	private int pNum;
 	private int price;
 	private boolean payment;
-	private String seat;
 	private String userId;
 	private int scheduleId;
-
-	public ReserveDTO() {}
-
-	public ReserveDTO(int reserveId, int pNum, int price, boolean payment, 
-			String seat, String userId, int scheduleId) {
+	private String seat;
+	
+	public ReserveDTO(int reserveId, int pNum, int price, boolean payment, String userId, int scheduleId,String seat) {
 		this.reserveId = reserveId;
 		this.pNum = pNum;
 		this.price = price;
 		this.payment = payment;
-		this.seat = seat;
 		this.userId = userId;
 		this.scheduleId = scheduleId;
+		this.seat = seat;
 	}
+	
 
 	public int getReserveId() {
 		return reserveId;
@@ -54,14 +53,6 @@ public class ReserveDTO {
 		this.payment = payment;
 	}
 
-	public String getSeat() {
-		return seat;
-	}
-
-	public void setSeat(String seat) {
-		this.seat = seat;
-	}
-
 	public String getUserId() {
 		return userId;
 	}
@@ -77,7 +68,16 @@ public class ReserveDTO {
 	public void setScheduleId(int scheduleId) {
 		this.scheduleId = scheduleId;
 	}
-	
-	
+
+	public String getSeat() {
+		return seat;
+	}
+
+	public void setSeat(String seat) {
+		this.seat = seat;
+	}
+
+
+
 	
 }

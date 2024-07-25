@@ -5,12 +5,12 @@ public class TheaterDTO {
 	private String theaterName;
 	private String theaterAddr;
 	private int seatCnt;
-	private int dimension;
+	private String dimension;
 	
 	public TheaterDTO() {
 	}
 
-	public TheaterDTO(int theaterId, String theaterName, String theaterAddr, int seatCnt, int dimension) {
+	public TheaterDTO(int theaterId, String theaterName, String theaterAddr, int seatCnt, String dimension) {
 		this.theaterId = theaterId;
 		this.theaterName = theaterName;
 		this.theaterAddr = theaterAddr;
@@ -50,13 +50,14 @@ public class TheaterDTO {
 		this.seatCnt = seatCnt;
 	}
 
-	public int getDimension() {
+	public String getDimension() {
 		return dimension;
 	}
 
-	public void setDimension(int dimension) {
+	public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
-	
-	
+
+
+
 }
